@@ -1,0 +1,14 @@
+/////////////UZUPELNIENIE KLASY PUNKT2D O OPERATOR < ////////////////////////////
+bool Punkt2D::operator<(Punkt2D& point)
+{
+    if (x < point.GetX() || (x == point.GetX() && y < point.GetY()))
+        return true;
+    return false;
+}
+/////////////UZUPELNIENIE KLASY PUNKT3D O OPERATOR < ///////////////////
+bool Punkt3D::operator<(Punkt3D& point)
+{
+    if (x < point.GetX() || (x == point.GetX() && y < point.GetY()) || (x == point.GetX() && y == point.GetY() && z < point.GetZ()))
+        return true;
+    return false;
+}
